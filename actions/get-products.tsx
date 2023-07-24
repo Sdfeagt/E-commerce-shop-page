@@ -1,5 +1,4 @@
 import qs from "query-string"
-
 import { Product } from "@/types";
 
 interface Query {
@@ -16,11 +15,12 @@ const getProducts = async (query: Query): Promise<Product[]> => {
         url: URL,
         query: {
             colorId: query.colorId,
-            sizeId: query.colorId,
+            sizeId: query.sizeId,
             categoryId: query.categoryId,
             isFeatured: query.isFeatured,
         },
     })
+    console.log(query);
     const res = await fetch(url)
     return res.json()
 }
