@@ -16,6 +16,8 @@ This project uses following technologies
 
 Curious to see the website in action? Check out an interactive demo [here](https://e-commerce-shop-page.vercel.app).
 
+Please note that this app uses Stripe. Please use [Stripe tests cards](https://stripe.com/docs/testing) while checking out.
+
 ## License
 
 This project uses MIT license. Please refer to the `LICENSE` file for more details.
